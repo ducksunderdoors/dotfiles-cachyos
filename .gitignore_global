@@ -1,0 +1,31 @@
+# macOS
+.DS_Store
+
+# Linux
+*~
+.directory
+
+# Editors
+*.swp
+*.swo
+*.bak
+.idea/
+.vscode/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Build artifacts
+*.o
+*.so
+dist/
+build/
