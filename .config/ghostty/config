@@ -1,0 +1,65 @@
+# =============================================================================
+# GHOSTTY CONFIG - CachyOS Workstation (34" Ultrawide)
+# =============================================================================
+# Mirror of macOS config with Linux/Wayland adaptations
+# Reload: Ctrl+Shift+,
+# =============================================================================
+
+# THEME
+theme = Aura
+background-opacity = 0.85
+
+# FONT
+font-size = 14
+
+# WINDOW
+window-padding-x = 4
+window-padding-y = 4
+window-decoration = false
+gtk-titlebar = false
+
+# SHELL
+command = /usr/bin/zsh
+
+# SPLITS — Create (Shift+Alt+HJKL)
+keybind = shift+alt+h=new_split:left
+keybind = shift+alt+j=new_split:down
+keybind = shift+alt+k=new_split:up
+keybind = shift+alt+l=new_split:right
+
+# SPLITS — Navigate (Ctrl+HJKL)
+keybind = ctrl+h=goto_split:left
+keybind = ctrl+j=goto_split:bottom
+keybind = ctrl+k=goto_split:top
+keybind = ctrl+l=goto_split:right
+
+# SPLITS — Resize (Ctrl+Shift+HJKL)
+keybind = ctrl+shift+h=resize_split:left,20
+keybind = ctrl+shift+j=resize_split:down,20
+keybind = ctrl+shift+k=resize_split:up,20
+keybind = ctrl+shift+l=resize_split:right,20
+
+# SPLITS — Close
+keybind = shift+alt+z=close_surface
+
+# TABS
+keybind = ctrl+shift+t=new_tab
+keybind = ctrl+shift+w=close_tab
+
+# CONFIG
+keybind = ctrl+shift+comma=reload_config
+
+# CLIPBOARD (Linux/Wayland)
+copy-on-select = clipboard
+
+# Key changes from what you had:
+
+# - **`window-decoration = false` and `gtk-titlebar = false`** — kills the title bar, reclaims vertical space on the ultrawide. You're managing windows with keybinds anyway.
+# - **Split resize with Ctrl+Shift+HJKL** — your Mac tmux conf had this, now Ghostty native.
+# - **`goto_split:bottom/top`** instead of `down/up` — that's the correct Ghostty syntax on Linux.
+# - **`copy-on-select`** — select text and it's automatically in your clipboard. No Ctrl+C needed.
+# - **Explicit `command = /usr/bin/zsh`** — belt and suspenders so Ghostty never falls back to Fish.
+# - **Font size 14** — good starting point for a 34" ultrawide. Adjust after you see it.
+
+# Save it, then reload without restarting:
+# Ctrl+Shift+,
