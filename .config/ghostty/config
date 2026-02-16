@@ -15,8 +15,8 @@ font-size = 14
 # WINDOW
 window-padding-x = 4
 window-padding-y = 4
-window-decoration = false
-gtk-titlebar = false
+window-decoration = true
+gtk-titlebar = true
 
 # SHELL
 command = /usr/bin/zsh
