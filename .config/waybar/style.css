@@ -1,0 +1,67 @@
+* {
+    font-family: "MesloLGS Nerd Font", "Font Awesome 6 Free", monospace;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(21, 18, 27, 0.85);
+    color: #edecee;
+    border-bottom: 2px solid rgba(108, 112, 134, 0.3);
+}
+
+#workspaces button {
+    padding: 0 8px;
+    color: #6c7086;
+    background: transparent;
+    border: none;
+    border-radius: 4px;
+    margin: 2px 2px;
+}
+
+#workspaces button.active {
+    color: #a277ff;
+    background: rgba(162, 119, 255, 0.15);
+    font-weight: bold;
+}
+
+#workspaces button:hover {
+    background: rgba(162, 119, 255, 0.1);
+}
+
+#window {
+    color: #bac2de;
+    font-weight: bold;
+}
+
+#cpu, #memory, #pulseaudio, #network, #clock, #tray {
+    padding: 0 10px;
+    color: #edecee;
+}
+
+#cpu {
+    color: #89b4fa;
+}
+
+#memory {
+    color: #a6e3a1;
+}
+
+#pulseaudio {
+    color: #f9e2af;
+}
+
+#network {
+    color: #94e2d5;
+}
+
+#clock {
+    color: #cba6f7;
+    font-weight: bold;
+}
+
+tooltip {
+    background: rgba(21, 18, 27, 0.95);
+    border: 1px solid rgba(162, 119, 255, 0.3);
+    border-radius: 8px;
+}
