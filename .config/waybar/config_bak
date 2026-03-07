@@ -19,34 +19,34 @@
     },
 
     "cpu": {
-    "format": "󰻠 {usage}%",
-    "interval": 5
+        "format": "  {usage}%",
+        "interval": 5
     },
 
     "memory": {
-    "format": "󰍛 {}%",
-    "interval": 10
+        "format": "  {}%",
+        "interval": 10
     },
 
     "pulseaudio": {
         "format": "{icon} {volume}%",
-        "format-muted": "󰝟 muted",
+        "format-muted": "  muted",
         "format-icons": {
-            "default": ["󰕿", "󰖀", "󰕾"]
+            "default": ["", "", ""]
         },
         "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
     },
 
     "network": {
-    "format-wifi": "󰤨 {signalStrength}%",
-    "format-ethernet": "󰈀 {cidr}",
-    "format-disconnected": "󰤭 offline",
-    "tooltip-format": "{ifname}: {ipaddr}/{cidr}"
+        "format-wifi": "  {signalStrength}%",
+        "format-ethernet": "  {cidr}",
+        "format-disconnected": "  offline",
+        "tooltip-format": "{ifname}: {ipaddr}/{cidr}"
     },
 
     "clock": {
-    "format": "󰃰 {:%a %b %d  %H:%M}",
-    "tooltip-format": "{:%Y-%m-%d %A}"
+        "format": "  {:%a %b %d  %H:%M}",
+        "tooltip-format": "{:%Y-%m-%d %A}"
     },
 
     "tray": {
